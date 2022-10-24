@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Create account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+<main class="main">
+    <div class="container">
+        <form action="" id="form" class="form">
+            <div class="form__wrapper">
+                <h1 class="form__title">Create an account</h1>
+
+                <div class="form__field">
+                    <h3 class="form__input_title">Email (required)</h3>
+                    <input type="email" class="form__input" required id="email">
+                    <div class="form__error" id="email-error">This is a required field</div>
+
+                </div>
+                <div class="form__field">
+                    <h3 class="form__input_title">Password (required)</h3>
+                    <input type="password" class="form__input" required id="password">
+                    <div class="form__error" id="password-error">This is a required field</div>
+                </div>
+
+
+            </div>
+            <div class="button" id="button">
+                Submit
+            </div>
+        </form>
+        <div class="user__content content__hidden" id="user-content">
+            <h2 class="user__title">Hello, user with email <span class="user-email"></span></h2>
+            <div class="user__image">
+                <img src="./img/hello-image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup__window">
+            <h3 class="popup__title">Please confirm account creation for <span class="user-email"></span></h3>
+            <div class="popup__buttons">
+                <div class=" popup__button button__cancel" id="popup-button-cancel">Cancel</div>
+                <div class="popup__button button__confirm" id="popup-button-confirm">Confirm</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
